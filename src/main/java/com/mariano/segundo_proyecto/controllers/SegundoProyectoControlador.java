@@ -150,12 +150,12 @@ public class SegundoProyectoControlador {
     public ResponseEntity<String> getLevel(@RequestParam(name = "level") int levelUser) {
         Level level = new Level();
         Gson objectGson = new Gson();
-      //condicional para verificar que no sea nulo o menor a 0
-        if (levelUser< 0 || treeAvlUser == null) {
+      //condicional para verificar que no sea nulo o menor a 1
+        if (levelUser< 1 || treeAvlUser == null) {
             return new ResponseEntity<>("Status Code 400 ", HttpStatus.BAD_REQUEST);
         } else {
         	try {//verificamos que el dato ingresado sea un numero y que se cuente con el nivel determinado
-        		if(levelUser<=treeAvlUser.getHeight(treeAvlUser.getRoot())) {
+        		if(levelUser<=treeAvlUser.getHeight(treeAvlUser.getRoot())+1) {
         			/*Realizamos un map para el recorrido y devolvemos su conversion en string
                 	 * */
                     Map<String, String> getLevel = level.getLevel(treeAvlUser, levelUser);

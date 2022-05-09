@@ -197,7 +197,7 @@ public class TreeAvl {
 	public int getErrores(){
 		return errores;
 	}
-	//Node avlNewNode, Node avlSubTree
+	//creamos un metodo para la eliminacion dentro del nodo
     private Node deleteTreeAvl(Node avlNewNode, Node avlSubTree) {
     	Node newFather = avlSubTree;
 		if (avlNewNode.getData() < avlSubTree.getData()) {
@@ -242,8 +242,6 @@ public class TreeAvl {
   		Node newNode = new Node(card, cardType, data);
   		root = deleteTreeAvl(newNode, root);//eliminamos
       }
-  	//metodo para comprobar si no se encuentra el dato
-
 	//escritura de archivo Graphviz
     public String realizeGraphicGraphviz() {
         String stringGraphviz = "digraph G\n"

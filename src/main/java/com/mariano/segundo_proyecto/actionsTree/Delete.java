@@ -145,6 +145,11 @@ public class Delete {
 								}
 									
 							}
+							if(dataBefore13Second==13) {status406=1;
+								if(treeUser.getStatusCode404()==0) {
+									treeUser.insertData(letterCard13, typeCard13, dataCard13);//insertamos dato
+								}
+							}
 						}
 						if(dataBefore13==13) {
 							if(dataBefore13Second!=13) {//System.out.println("No pude eliminar el segundo, es distinto a 13");

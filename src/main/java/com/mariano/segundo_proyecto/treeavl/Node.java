@@ -58,6 +58,7 @@ public class Node {
 	public void setChildLeft(Node childLeft) {
 		this.childLeft = childLeft;
 	}
+	//creamos una clase con la cual podremos crear nuestra grafica
 	public String createUserGraphic(){
         //establecemos un cambio de tipo en caso contengan cierto caracter para que lo reconozca graphviz
 		String changeCardType=" ";

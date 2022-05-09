@@ -10,7 +10,7 @@ public class Route {
 	public Route() {
 
 	}
-	//creamos un map
+	//creamos un map para obtener la ruta en preOrden
 	public Map<String, String> routePreOrder(TreeAvl arbol) {
 		//obtenemos la ruta en preOrden del arbol
 		String route = "";
@@ -23,7 +23,7 @@ public class Route {
 		}
 		return routePreOrder;
 	}
-	//creamos un map
+	//creamos un map para obtener la ruta en inOrden
 	public Map<String, String> routeInOrder(TreeAvl arbol) {
 		//obtenemos la ruta en ineOrden del arbol
 		String route = "";
@@ -36,7 +36,7 @@ public class Route {
 		}
 		return routeInOrder;
 	}
-	//creamos un map
+	//creamos un map para obtener la ruta en postOrden
 	public Map<String, String> routePostOrder(TreeAvl arbol) {
 		//obtenemos la ruta en ineOrden del arbol
 		String route = "";

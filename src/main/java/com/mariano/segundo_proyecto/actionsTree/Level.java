@@ -9,12 +9,12 @@ public class Level {
 	public Level() {
 
 	}
-	//creamos un map
+	//creamos un map para obtener los nodos de un nivel determinado
 	public Map<String, String> getLevel(TreeAvl arbol,int levelUser) {
 		//obtenemos el nivel del arbol
 		String level = "";
 		Map<String, String> getLevel = new LinkedHashMap<String, String>();
-		level = arbol.getLevel(arbol.getRoot(),levelUser);
+		level = arbol.getLevel(arbol.getRoot(),levelUser-1);
 		//Separamos nuestros datos del nivel solicitado
 		String[] split = level.split(" ");
 		for (int i = 0; i < split.length; i++) {
